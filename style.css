@@ -1,0 +1,105 @@
+body {
+    background-color : #eee;
+}
+.hide {
+    display: none;
+}
+h1{
+    text-align: center;
+}
+.main{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ボタン */
+.btn-area{
+    margin-top: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+button{
+    display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 40%;
+	margin: auto;
+	padding: 1rem 1rem;
+	font-weight: bold;
+    font-size: 24px;
+	background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+	border-radius: 100vh;
+	color: #333;
+	border: 1px solid #999;
+	text-shadow: 0 1px #fff;
+	box-shadow: 0 3px 2px 1px #fcfcfc, 0 4px 6px #cecfd1, 0 -2px 2px #cecfd1, 0 -4px 2px #eee, inset 0 0 2px 2px #cecfd1;
+	transition: 0.5s;
+}
+button:hover{
+    opacity: 0.5;
+}
+
+.majin-area{
+    display: flex;
+    align-items: flex-start;
+}
+/* 吹き出し */
+.question-area {
+    position: relative;
+    margin: 2em 0 2em 40px;
+    padding: 15px;
+    background: white;
+    border: solid 1px black;
+    border-radius: 30px;
+}
+  
+.question-area:before {  
+    content: "";
+    position: absolute;
+    left: -38px;
+    width: 13px;
+    height: 12px;
+    bottom: 0;
+    background: white;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+  
+.question-area:after {
+    content: "";
+    position: absolute;
+    left: -24px;
+    width: 20px;
+    height: 18px;
+    bottom: 3px;
+    background: white;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+.question-area p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+@media(max-width: 600px){
+    #selected-number{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    #btn-area{
+        width: 100%;
+    }
+    .number{
+        width: 18vw;
+        height: 18vw;
+    }
+    .num-area{
+        margin-bottom: 20px;
+    }
+}
